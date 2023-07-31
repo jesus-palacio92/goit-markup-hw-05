@@ -14,12 +14,13 @@
     <header>
         <div class="container-header">
             <a href="/" class="logo">WebStudio</a>
-            <nav> 
+            <nav>
                 <ul class="navigation-link"> 
                     <li><a class="active-link current" href="./index.html">estudio</a></li>
                     <li><a class="active-link" href="./portafolio.html">portafolio</a></li>
                     <li><a class="active-link" href="">contactos</a></li>
                 </ul>
+                <p class="after"></p> 
             </nav>
             <ul class="contact">
                 <li>
@@ -28,6 +29,7 @@
                             <use href="./images/iconssvg/icons.svg#icon-mail"></use>
                         </svg>
                         info@dvstudio.com
+                        
                     </a>
                 </li>
                 <li>
@@ -41,12 +43,13 @@
             </ul>
         </div>
     </header>
+    <div class="divider"></div>
     <main>
         <section class="prime-title">
             <div class="container">
                 <div class="title">
                     <h1 class="h1-title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-                    <button class="button-index" type="button">Solicite nuestro servicio</button>
+                    <button class="button-index" type="button" data-modal-open>Solicite nuestro servicio</button>
                 </div>
             </div>
         </section>
@@ -375,5 +378,16 @@
             </div>
         </div>
     </footer>
+    <section>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="modal-close" data-modal-close>close</button>
+                <svg class="icon-close">
+                    <use class="img-close" href="./images/iconssvg/icons.svg#icon-close"></use>
+                </svg>
+            </div>
+        </div>
+    </section>
+    <script src="./modal.js"></script>
 </body>
 </html>
